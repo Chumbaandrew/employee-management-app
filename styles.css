@@ -1,6 +1,7 @@
 *{
     margin:0;
     padding: 0;
+    /*background :  linear-gradient(90deg, #ffde59, #ff914d);*/
 }
 .landingPage {
     min-height:100vh;
@@ -133,12 +134,16 @@ button:hover {
     box-shadow:1px 3px 1px #000000;
 }
 .formdiv{
+    width: 50%;
+    margin: auto;
     background-color: white;
     border: solid 1px;
-    padding: 20px;
+    padding: 10px;
+    border-radius: 20px;
 
 }
 .form{
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
@@ -157,6 +162,4 @@ input{
     width: 80%;
     padding: 8px;
 }
-.submitbutton{
- padding: 10px;
-}
+
