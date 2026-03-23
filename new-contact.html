@@ -2,67 +2,202 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>View Contact</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>newcontact2</title>
+    <script src="https://kit.fontawesome.com/edfb9a3206.js" crossorigin="anonymous"></script>
 </head>
-<body class="newcontact">
-<div class="heronew"><h3><b> Add New Contact</b></h3></div>
-<div class="formdiv">
-<form class="form">
+<body>
+<div class="container">
+    <header>New Contact</header>
+    <form action="#">
+        <div class="details personal">
+            <span class="title">Personal Details</span>
+            <div class="fields">
+                <div class="inputfield">
+                    <label>First Name</label>
+                    <input type="text" placeholder="Enter your name" required>
+                </div>
+                
+                <div class="inputfield">
+                    <label>Last Name</label>
+                    <input type="text" placeholder="Enter your name" required>
+                </div>
+                
+                <div class="inputfield">
+                    <label>Phone</label>
+                    <input type="Number" placeholder="Enter your Phone number" required>
+                </div>
 
-    <div class="formrow">
-    <label for="ID" id="ID">ID Number:</label>
-    <input type="number" placeholder="Identification number" required>
-    </div>
+                <div class="inputfield">
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter your email" required>
+                </div>
 
+                <div class="inputfield">
+                    <label>Address</label>
+                    <input type="Number" placeholder="Enter your Address" required>
+                </div>
 
-    <div class="formrow">
-    <label for="fname" id="fname">First Name:</label>
-    <input type="text" placeholder=" Enter First Name" required>
-    </div>
+                <div class="inputfield">
+                    <label>Date of Birth</label>
+                    <input type="Date" placeholder="" required>
+                </div>
 
-    <div class="formrow">
-    <label for="lname" id="lname">Last Name:</label>
-    <input type="text" placeholder="Enter Last Name" required>
-    </div>
+                <div class="inputfield">
+                    <label>Department</label>
+                    <input type="text" placeholder="Enter your department" required>
+                </div>
 
-    <div class="formrow">
-    <label for="phone" id="phone">Phone:</label>
-    <input type="number" placeholder="Enter Phone number" required>
-    </div>
+                <div class="inputfield">
+                    <label>position</label>
+                    <input type="text" placeholder="Enter your position" required>
+                </div>
 
-    <div class="formrow">
-    <label for="email" id="email">Email:</label>
-    <input type="email"  placeholder="@gmail.com">
-    </div>
+                <div class="inputfield">
+                    <label>ID no.</label>
+                    <input type="Number" placeholder="Enter your Identification" required>
+                </div>
+                
+            </div>
+            
+            <div class="buttons">
+                <button class="backbtn" onclick="window.location.href='getstarted.html'">
+                    <i class="fa-solid fa-arrow-left" style="color: rgb(25, 25, 27);"></i>
+                    <span class="backbtn">Back</span>
+                </button>
 
-    <div class="formrow">
-    <label for="address" id="address"> Address:</label>
-    <input type="number" placeholder="Enter Home Address" required>
-    </div>
-
-    <div class="formrow">
-    <label for="DOB" id="DOB">Date OF Birth:</label>
-    <input type="date" placeholder="" required>
-    </div>
-
-    <div class="formrow">
-    <label for="position" id="position">ID Number:</label>
-    <input type="text" placeholder="select position" required>
-    </div>
-
-
-    <div class="formrow">
-    <label for="gender" id="gender">Male:</label>
-    <input type="radio"  name="opt1"  required>
-    <label for="gender" id="female">Female:</label>
-    <input type="radio"  name="opt1"  required>
-    </div>
-
-
-</form>
-    <input type="submit" name="" id="">
-    <input type="reset" name="" id="">
+                <button class="donebtn">
+                    <span class="backbtn">Done</span>
+                    <i class="fa-solid fa-check" style="color: rgb(25, 25, 27);"></i>
+                </button>
+            </div>
+            
+        </div>
+    </form>
 </div>
+
 </body>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+    body{
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(90deg, #ffde59, #ff914d);
+    }
+    .container{
+        position: relative;
+        max-width: 900px;
+        width: 100%;
+        background-color: #fff;
+        border-radius:6px;
+        padding: 30px;
+        margin: 0 15px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+    .container header{
+        position: relative;
+       font-size: 20px;
+        font-weight: 600;
+        color: #333;
+    }
+    .container header::before{
+        content:"";
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        height: 3px;
+        width: 27px;
+        background-color: #FFDE59FF;
+        border-radius: 8px;
+    }
+    .container form{
+        position: relative;
+        min-height: 402px;
+        margin-top: 16px;
+        
+    }
+    .container form .details{
+        margin-top: 30px;
+    }
+    .container form .title{
+        display: block;
+        margin-bottom: 8px;
+        font-size: 16px;
+        font-weight: 500;
+        margin: 6px 0;
+        color: #333;
+    }
+    .container form .fields{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    form .fields .inputfield{
+        display: flex;
+        width: calc(100%/3 - 15px);
+        flex-direction: column;
+        margin: 4px 0;
+    }
+    .inputfield label{
+        font-size: 12px;
+        font-weight: 500;
+        color: #2e2e2e;
+        
+    }
+    .inputfield input{
+        outline: none;
+        font-size: 14px;
+        font-weight: 400;
+        border-radius: 5px;
+        color: #333;
+        border: 1px solid #aaa;
+        padding: 0 15px;
+        height: 42px;
+        margin: 8px 0;
+    }
+    .inputfield input:is(:focus, :valid){
+        box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+    }
+    .container form .buttons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    .container form button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 45px;
+        max-width: 150px;
+        width: 100%;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        margin: 25px 0;
+        background-color: #fbd958;
+        transition: 0.1s;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        cursor: pointer;
+    }
+    form button:hover{
+        transform:translateX(0.5px) translateY(2px);
+    }
+    .container form .buttons .donebtn{
+        background-color: #fd974e;
+    }
+    form button i{
+        margin: 0 6px;
+    }
+</style>
 </html>
