@@ -2,26 +2,354 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Get Started</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
-<body class="getstarted">
-<nav>
-    <ul class="gtnav">
-
-        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="70" height="70"><path d="m12,0C5.383,0,0,5.383,0,12s5.383,12,12,12,12-5.383,12-12S18.617,0,12,0Zm-5,21.797v-.797c0-2.757,2.243-5,5-5s5,2.243,5,5v.797c-1.501.769-3.201,1.203-5,1.203s-3.499-.434-5-1.203Zm11-.582v-.215c0-3.309-2.691-6-6-6s-6,2.691-6,6v.215c-3.008-1.965-5-5.362-5-9.215C1,5.935,5.935,1,12,1s11,4.935,11,11c0,3.853-1.992,7.25-5,9.215ZM12,5c-2.206,0-4,1.794-4,4s1.794,4,4,4,4-1.794,4-4-1.794-4-4-4Zm0,7c-1.654,0-3-1.346-3-3s1.346-3,3-3,3,1.346,3,3-1.346,3-3,3Z"/></svg>
-        </a></li>
-        <li><a onclick="window.location.href='index.html'"> <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="20" height="20">
-            <path d="M13.337,.514c-.763-.686-1.913-.686-2.674,0L0,10.11v10.689c0,1.765,1.436,3.2,3.2,3.2H20.8c1.765,0,3.2-1.436,3.2-3.2V10.11L13.337,.514Zm2.663,22.486H8v-6c0-2.206,1.794-4,4-4s4,1.794,4,4v6Zm7-2.2c0,1.213-.987,2.2-2.2,2.2h-3.8v-6c0-2.757-2.243-5-5-5s-5,2.243-5,5v6H3.2c-1.213,0-2.2-.987-2.2-2.2V10.556L11.332,1.257c.38-.342,.955-.343,1.337,0l10.332,9.298v10.244Z"/>
-        </svg>Home</a></li>
-        <li><a onclick="window.location.href='new-contact.html' "><svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="20" height="20">
-            <path d="M8,12c3.309,0,6-2.691,6-6S11.309,0,8,0,2,2.691,2,6s2.691,6,6,6Zm0-11c2.757,0,5,2.243,5,5s-2.243,5-5,5S3,8.757,3,6,5.243,1,8,1Zm8,18v5h-1v-5c0-2.206-1.794-4-4-4H5c-2.206,0-4,1.794-4,4v5H0v-5c0-2.757,2.243-5,5-5h6c2.757,0,5,2.243,5,5Zm8-7h-4v4h-1v-4h-4v-1h4V7h1v4h4v1Z"/>
-        </svg>New contact</a></li>
-        <li><a onclick="window.location.href='view-contacts.html'"><svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="20" height="20">
-            <path d="M12,12c3.309,0,6-2.691,6-6S15.309,0,12,0,6,2.691,6,6s2.691,6,6,6Zm0-11c2.757,0,5,2.243,5,5s-2.243,5-5,5-5-2.243-5-5S9.243,1,12,1Zm9,18v5h-1v-5c0-2.206-1.794-4-4-4H8c-2.206,0-4,1.794-4,4v5h-1v-5c0-2.757,2.243-5,5-5h8c2.757,0,5,2.243,5,5Z"/>
-        </svg>View contact</a></li>
-
+<body>
+<div class="sidebar">
+    <div class="profilecard"></div>
+    <ul class="menu">
+        <li class="active"> 
+            <a href="#"><i class="fa-solid fa-chart-column" style="color: rgb(51, 51, 51);"></i>
+            <span>Dashboard</span>
+            </a>
+        </li>
+        <li>
+            <a href="#"><i class="fa-solid fa-circle-user" style="color: rgb(51, 51, 51);"></i>
+            <span>Profile</span>
+            </a>
+        </li>
+        <li>
+            <a href="#"><i class="fa-solid fa-house" style="color: rgb(51, 51, 51);"></i>
+            <span>Home</span>
+            </a>
+        </li>
+        <li>
+            <a href="new-contact.html"><i class="fa-solid fa-person-circle-plus" style="color: rgb(51, 51, 51);"></i>
+            <span>Add User</span>
+            </a> 
+        </li>
+        <li>
+            <a href="view-contacts.html"><i class="fa-solid fa-person-circle-check" style="color: rgb(51, 51, 51);"></i>
+            <span>View User</span>
+            </a>
+        </li><li>
+            <a href="#"><i class="fa-solid fa-gear" style="color: rgb(51, 51, 51);"></i>
+            <span>Settings</span>
+            </a>
+        </li>
+        <li class="logout">
+            <a href="#"><i class="fa-solid fa-arrow-right-from-bracket" style="color: rgb(51, 51, 51);"></i>
+            <span>Log Out</span>
+            </a>
+        </li>
     </ul>
-</nav>
+</div>
+
+<!--main_content-->
+
+<div class="maincontent">
+    
+<!--    title section-->
+    <div class="header--wrapper">
+        <div class="header--title">
+            <i class="fa-solid fa-chart-column" style="color: rgb(51, 51, 51);"></i>
+            <h2>Dashboard</h2>
+        </div>
+        <div class="userinfo">
+            <div class="search--box">
+            <i class="fa-brands fa-sistrix" style="color: rgb(51, 51, 51);"></i>
+            <input type="text" placeholder="search">
+            </div>
+            <img src="images/userimg.png" alt="">
+        </div>
+    </div>
+    <!--    card section-->
+    <div class="card--container">
+        <h3 class="main--title">Today's Data</h3>
+        <div class="card--wrapper">
+            
+            <div class="details--card">
+                <div class="card--header">
+                    <div class="amount">
+                        <span class="title">No. of positions</span>
+                        <span class="amount-value">30</span>
+                    </div>
+                    <i class="fa-solid fa-users-line icon" style="color: rgb(51, 51, 51);"></i>
+                </div>
+                <button class="info">more info</button>
+            </div>
+
+            <div class="details--card light--blue"  >
+                <div class="card--header">
+                    <div class="amount">
+                        <span class="title">No. of contacts</span>
+                        <span class="amount-value">100</span>
+                    </div>
+                    <i class="fa-solid fa-address-book icon dark--blue" style="color: rgb(51, 51, 51);"></i>
+                </div>
+                <button class="info">more info</button>
+            </div>
+
+            <div class="details--card light--green" >
+                <div class="card--header">
+                    <div class="amount">
+                        <span class="title">Departments</span>
+                        <span class="amount-value">7</span>
+                    </div>
+                    <i class="fa-solid fa-building-user icon dark--green" style="color: rgb(51, 51, 51);"></i>
+                </div>
+                <button class="info">more info</button>
+            </div>
+
+            <div class="details--card light--brown">
+                <div class="card--header">
+                    <div class="amount">
+                        <span class="title">Employees</span>
+                        <span class="amount-value">205</span>
+                    </div>
+                    <i class="fa-solid fa-user-tie icon dark--brown" style="color: rgb(51, 51, 51);"></i>
+                </div>
+                <button class="info">more info</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family:'Poppins', 'Jost', sans-serif;
+      border: none;
+      outline: none;
+    }
+    body{
+        display: flex;
+        background: linear-gradient(90deg, #ffde59, #ff914d);
+    }
+    .sidebar{
+        position: sticky;
+        top:0;
+        bottom:0;
+        left: 0;
+        height: 100vh;
+        width: 110px;
+        color: #333;
+        border-radius: 6px;
+        overflow: hidden;
+        padding: 0 1.7rem;
+        transition: all 0.3s;
+        background-color: #fff;
+    }
+    .sidebar:hover {
+        width: 240px;
+        transition: 0.2s;
+    }
+    
+    .profilecard{
+        padding: 16px;
+        height: 80px;
+    }
+    .menu{
+        position: relative;
+        list-style: none;
+        padding: 0;
+        height: 88%
+    }
+    .menu li{
+        padding: 16px;
+        margin: 8px 0;
+        border-radius: 6px;
+        transition: all 0.1s ease-in-out;
+    }
+    .menu li:hover ,.active ,.logout{
+        background-color: rgba(255, 222, 89, 0.22);
+        transform:scale(1.12);
+    }
+    
+    .menu a{
+        text-decoration: none;
+        color: #000000;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: 14px;
+    }
+    .menu a span{
+        overflow: hidden;
+    }
+    menu a i{
+        font-size: 25px;
+    }
+    .logout{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color:  #f86d6d;
+        transform: scale(.7)
+    }
+    /*main--contact*/
+    
+    .maincontent{
+        position: relative;
+        padding: 1rem;
+        width: 100%
+    }
+    .header--wrapper img{
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        border-radius: 50%;
+        border: 1px solid #000000;
+    }
+    .header--wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        background-color: #fff;
+        border-radius: 6px;
+        padding: 10px 2rem;
+        margin-bottom: 1rem;
+        
+    }
+    h2{
+        display: flex;
+        gap: 6px;
+        align-content: center;
+    }
+    .header--title {
+        color: #ff914d;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+    .userinfo{
+      display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    .search--box{
+        background: rgb(237 ,237 ,237);
+        border-radius: 6px;
+        color: rgba(255, 222, 89, 0.22);
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding: 4px 12px;
+    }
+    .search--box input{
+        background: transparent;
+        padding: 4px;
+    }
+    .search--box i{
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: all 0.2s ease-out;
+    }
+    .search--box i:hover{
+        transform: scale(1.2);
+    }
+    
+   
+    /*card---container*/
+ 
+    .card--container{
+        background: #fff;
+        padding: 2rem;
+        border-radius: 6px;
+    }
+    .card--wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem
+    }
+    .main--title{
+        color: #333;
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+    .details--card{
+        background: #EDF4C3;
+        border-radius: 6px;
+        padding: 1.2rem;
+        width: 290px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: all 0.2s ease-in-out;
+    }
+    .details--card:hover{
+        transform: translateY(-5px);
+    }
+    .card--header{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .amount{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .title{
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .amount-value{
+        font-size: 30px;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: 600;
+    }
+    .icon {
+        padding: 1rem;
+        height: 60px;
+        width:60px;
+        text-align: center;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        background: #A3A887;
+        
+    }
+    .card--container button{
+        padding: 8px;
+        outline: none;
+        border: none;
+        border-radius: 6px;
+        background-color: #3333;
+    }
+    .card--container button:hover{
+        transform: scale(1.1);
+    }
+    .light--blue{
+        background-color: rgba(94, 186, 248, 0.73);
+    }
+    .light--green{
+        background-color: rgba(104, 251, 185, 0.78);
+    }
+    .light--brown{
+        background-color: rgba(250, 145, 80, 0.75);
+    }
+    .dark--blue{
+        background-color:#4180AB;
+    }.dark--green{
+          background-color:#47AD7F;
+          
+    }.dark--brown{
+            background-color:#AD6537;
+        }
+    
+
+
+</style>
 </body>
 </html>
