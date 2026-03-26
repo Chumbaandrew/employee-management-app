@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>view contact</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="main.js"></script>
 
 </head>
 <body>
@@ -31,9 +32,9 @@
                 <td>+254759795947</td>
                 <td>@gmail.com</td>
                 <td>  
-                    <button><i class="fa-solid fa-eye" style="color: rgb(51, 51, 51);"></i> Details</button>
-                    <button><i class="fa-solid fa-pen-fancy" style="color: rgb(51, 51, 51);"></i> Edit</button> 
-                    <button><i class="fa-solid fa-trash" style="color: rgb(51, 51, 51);"></i>Delete</button> 
+                    <button onclick="window.location.href='contacts-card.html'"><i class="fa-solid fa-eye" style="color: rgb(51, 51, 51);"></i> Details</button>
+                    <button onclick="handlealert()"><i class="fa-solid fa-pen-fancy" style="color: rgb(51, 51, 51);"></i> Edit</button>
+                    <button onclick="handledelete()"><i class="fa-solid fa-trash" style="color: rgb(51, 51, 51);"></i>Delete</button>
                 </td>
             </tr>
 
@@ -43,9 +44,9 @@
                 <td>+254759795947</td>
                 <td>@gmail.com</td>
                 <td>
-                    <button><i class="fa-solid fa-eye" style="color: rgb(51, 51, 51);"></i> Details</button>
-                    <button><i class="fa-solid fa-pen-fancy" style="color: rgb(51, 51, 51);"></i> Edit</button>
-                    <button><i class="fa-solid fa-trash" style="color: rgb(51, 51, 51);"></i>Delete</button>
+                    <button onclick="window.location.href='contacts-card.html'"><i class="fa-solid fa-eye" style="color: rgb(51, 51, 51);"></i> Details</button>
+                    <button onclick="handlealert()"><i class="fa-solid fa-pen-fancy" style="color: rgb(51, 51, 51);"></i> Edit</button>
+                    <button onclick="handledelete()"><i class="fa-solid fa-trash" style="color: rgb(51, 51, 51);"></i>Delete</button>
                 </td>
             </tr>
 
@@ -55,9 +56,9 @@
                 <td>+254759795947</td>
                 <td>@gmail.com</td>
                 <td>
-                    <button><i class="fa-solid fa-eye" style="color: rgb(51, 51, 51);"></i> Details</button>
-                    <button><i class="fa-solid fa-pen-fancy" style="color: rgb(51, 51, 51);"></i> Edit</button>
-                    <button><i class="fa-solid fa-trash" style="color: rgb(51, 51, 51);"></i>Delete</button>
+                    <button onclick="window.location.href='contacts-card.html'"><i class="fa-solid fa-eye" style="color: rgb(51, 51, 51);"></i> Details</button>
+                    <button onclick="handlealert()"><i class="fa-solid fa-pen-fancy" style="color: rgb(51, 51, 51);"></i> Edit</button>
+                    <button onclick="handledelete()"><i class="fa-solid fa-trash" style="color: rgb(51, 51, 51);"></i>Delete</button>
                 </td>
             </tr>
 
@@ -67,11 +68,36 @@
                 <td>+254759795947</td>
                 <td>@gmail.com</td>
                 <td>
-                    <button><i class="fa-solid fa-eye" style="color: rgb(51, 51, 51);"></i> Details</button>
-                    <button><i class="fa-solid fa-pen-fancy" style="color: rgb(51, 51, 51);"></i> Edit</button>
-                    <button><i class="fa-solid fa-trash" style="color: rgb(51, 51, 51);"></i>Delete</button>
+                    <button onclick="window.location.href='contacts-card.html'"><i class="fa-solid fa-eye" style="color: rgb(51, 51, 51);"></i> Details</button>
+                    <button onclick="handlealert()"><i class="fa-solid fa-pen-fancy" style="color: rgb(51, 51, 51);"></i> Edit</button>
+                    <button onclick="handledelete()"><i class="fa-solid fa-trash" style="color: rgb(51, 51, 51);"></i>Delete</button>
                 </td>
             </tr>
+
+            <tr>
+                <td>5.</td>
+                <td>Andrew kasi</td>
+                <td>+254759795947</td>
+                <td>@gmail.com</td>
+                <td>
+                    <button onclick="window.location.href='contacts-card.html'"><i class="fa-solid fa-eye" style="color: rgb(51, 51, 51);"></i> Details</button>
+                    <button onclick="handlealert()"><i class="fa-solid fa-pen-fancy" style="color: rgb(51, 51, 51);"></i> Edit</button>
+                    <button onclick="handledelete()"><i class="fa-solid fa-trash" style="color: rgb(51, 51, 51);"></i>Delete</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>6.</td>
+                <td>Chumba Andrew</td>
+                <td>+254759795947</td>
+                <td>@gmail.com</td>
+                <td>
+                    <button onclick="window.location.href='contacts-card.html'"><i class="fa-solid fa-eye" style="color: rgb(51, 51, 51);"></i> Details</button>
+                    <button onclick="handlealert()"><i class="fa-solid fa-pen-fancy" style="color: rgb(51, 51, 51);"></i> Edit</button>
+                    <button onclick="handledelete()"><i class="fa-solid fa-trash" style="color: rgb(51, 51, 51);"></i>Delete</button>
+                </td>
+            </tr>
+
             </tbody>
 
         </table>
@@ -174,7 +200,7 @@
         font-size: 15px;
     }
     th,td{
-        border-bottom: 1px solid #dddddd;
+        border: 1px solid #dddddd;
         padding: 8px 8px;
         word-break: break-all;
         text-align: center;
