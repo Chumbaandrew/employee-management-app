@@ -1,129 +1,69 @@
+/*--project--font--*/
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*---project--colors---*/
+.light--1{
+    background-color: rgba(94, 186, 248, 0.75);
+}
+.light--2{
+    background-color: rgba(104, 251, 185, 0.75);
+}
+.light--3{
+    background-color: rgba(250, 145, 80, 0.75);
+}
+.light--4{
+    background-color: rgba(225, 193, 110, 0.75);
+}
+.light--5{
+    background-color: rgba(81, 65, 79, 0.75);
+}
+.light--6{
+    background-color: rgba(114, 47, 55, 0.75);
+}
+.light--7{
+    background-color: rgba(0, 255, 127, 0.75);
+}
+.dark--1{
+    background-color:rgba(94, 186, 248, 0.30);
+}
+.dark--2{
+     background-color:rgba(104, 251, 185, 0.30);
+ }
+.dark--3{
+    background-color: rgba(250, 145, 80, 0.30);
+}
+.dark--4{
+    background-color:rgba(225, 193, 110, 0.30);
+}
+.dark--5{
+    background-color:rgba(81, 65, 79, 0.30);
+}
+.dark--6{
+     background-color:rgba(114, 47, 55, 0.30);
+ }
+.dark--7{
+    background-color: rgba(0, 255, 127, 0.30);
+}
+
+
+/*-----general--styling----*/
+
 *{
-    margin:0;
+    margin: 0;
     padding: 0;
-    /*background :  linear-gradient(90deg, #ffde59, #ff914d);*/
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
-.landingPage {
-    min-height:100vh;
-    background-image: url(images/empIndex.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-}
-.getstarted{
-    min-height:100vh;
-    background-image: url(images/gs3.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-}
-nav{
-    background-color: rgba(255, 255, 255, 0);
-    box-shadow: 2px 1px 2px #000000;
-}
-nav ul{
-    width: 100%;
-    list-style: none;
+body{
+    min-height: 100vh;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
-}
-nav li{
-    height: 50px;
-}
-nav a{
-    height: 100%;
-    padding: 0 15px;
-    text-decoration: none;
-    display:flex;
-    gap: 6px;
-    align-items: center;
-    color: black;
-
-
-}
-.constbutton{
-    height: 40px;
-    background-color: #e07d34;
-    border-radius: 30px;
-}
-nav a:hover{
-    background-color: rgba(224, 125, 52, 0.38);
-    border-radius: 30px;
-    transform: translateY(1px);
-}
-nav li:first-child{
-    margin-right: auto;
+    justify-content: center;
+    background: linear-gradient(90deg, #ffde59, #ff914d);
 }
 
 
-.sidebar{
-    position: fixed;
-    top:0;
-    left:0;
-    height: 100vh;
-    width: 250px;
-    z-index: 100;
-    background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    box-shadow: 10px 0 10px #000000;
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-.sidebar li {
-    width: 87%
-}
-.sidebar a {
-    width: 87%
-}
-.sidebar li:first-child{
-    width: 5%;
-}
-.gtnav{
-    position: fixed;
-    top:0;
-    left:0;
-    height: 100vh;
-    width: 250px;
-    z-index: 100;
-    background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    box-shadow: 10px 0 10px #000000;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-.gtnav a:hover{
-    transform: translateX(4px) translateY(0px);
-}
-button{
-    position: absolute;
-    top: 67vh;
-    left: 49%;
-    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.5);
-    background-color:#e07c34;
-    border-radius:24px;
-    display:inline-block;
-    cursor:pointer;
-    color:#000000;
-    font-size:22px;
-    padding:17px 17px;
-    text-decoration:none;
-    border: none;
-    transition: transform 0.1s;
-}
-button:hover {
-    background:  linear-gradient(90deg, #ffde59, #ff914d);
-    transform:translateX(0.5px) translateY(2px);
 
-}
 
 
 
