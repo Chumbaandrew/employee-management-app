@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Dashboard</title>
+    <script src="main.js"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
@@ -36,18 +37,18 @@
             </a>
         </li>
 
-        <li>
+        <li onclick="soon()">
             <a href="#"><i class="fa-solid fa-circle-user" style="color: rgb(51, 51, 51);"></i>
                 <span>Profile</span>
             </a>
         </li>
 
-        <li>
+        <li onclick="soon()">
             <a href="#" ><i class="fa-solid fa-gear" style="color: rgb(51, 51, 51);"></i>
             <span>Settings</span>
             </a>
         </li>
-        <li class="logout">
+        <li class="logout" onclick="logout()">
             <a href="#"><i class="fa-solid fa-arrow-right-from-bracket" style="color: rgb(51, 51, 51);"></i>
             <span>Log Out</span>
             </a>

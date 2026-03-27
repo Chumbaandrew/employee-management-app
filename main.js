@@ -13,5 +13,15 @@ function handledelete(){
     }
 }
 function soon(){
-    alert("This button doesnt function at the moment, coming soon!");
+    alert("This button doesn't function at the moment, coming soon!");
+}
+function logout(){
+    let confirmlogout = confirm("Do you want to log out?");
+
+    if(confirmlogout){
+        window.location.href='index.html';
+    }
+    else{
+        alert("Pheeeewks !")
+    }
 }
